@@ -1,8 +1,10 @@
 package santos.joseleno.date;
 
 import java.time.LocalDate;
+import java.time.Month;
+import java.time.temporal.ChronoUnit;
 
-public class Prog {
+public class Date {
 
 	static LocalDate dateLieu;
 	
@@ -17,13 +19,13 @@ public class Prog {
 	public static void main(String[] args) {
 
 		/**
-		 * Nova API DATA JAVA 8
+		 * Nouveautés API DATE JAVA 8
 		 * 
 		 */
 		dateLieu = LocalDate.now();
 		imprimeDateLieu(dateLieu);
+	
 		
-
 	}
 
 
