@@ -9,10 +9,10 @@ import javax.persistence.Persistence;
 
 public class Main {
 
-
+    private static EntityManagerFactory factory;
              public static void main(String args[]) {
 
-                 EntityManagerFactory factory = Persistence.createEntityManagerFactory("JPAEXEMPLE");
+                 factory = Persistence.createEntityManagerFactory("JPAEXEMPLE");
 
                  Rappel rappel = new Rappel();
                  rappel.setTitre("Ir ao Detran");
