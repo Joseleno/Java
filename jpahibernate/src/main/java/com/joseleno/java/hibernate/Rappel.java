@@ -1,8 +1,18 @@
 package com.joseleno.java.hibernate;
 
+import javax.persistence.*;
+
+@Entity
 public class Rappel {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @Column(nullable = false)
     private String titre;
+
+    @Column(nullable = false)
     private String description;
 
     public Rappel() {
