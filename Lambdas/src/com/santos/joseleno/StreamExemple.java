@@ -6,19 +6,21 @@ import java.util.List;
 public class StreamExemple {
 
 	public static void main(String[] args) {
-		// antes do Java 8
-		List<String> list1 = Arrays.asList("Santa Catarina", "Parana", "São Paulo", "Rio de Janeiro", "Brasilisa",
-				"Ceará");
+		// avant Java 8
+		System.out.println("  avant Java 8");
+		List<String> list1 = Arrays.
+				asList("Brésil", "France", "Canada", "Chine", "Russie");
 
 		for (String s : list1) {
 			System.out.println(s);
 		}
-		
-		
-		//Java 8 Lambda
+
+		// Java 8 Lambda
+		System.out.println(" Lambda");
 		list1.forEach(x -> System.out.println(x));
-		
-		//Java 8 Method REference
+
+		System.out.println("Références de Méthodes");
+		// Java 8 les références de méthodes
 		list1.forEach(System.out::println);
 	}
 }
