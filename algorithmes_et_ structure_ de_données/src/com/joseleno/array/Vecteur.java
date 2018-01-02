@@ -1,7 +1,5 @@
 package com.joseleno.array;
 
-import java.util.Arrays;
-
 public class Vecteur {
 	
 	
@@ -39,7 +37,7 @@ public class Vecteur {
 	}
 
 	public boolean addElement(String element){
-		
+		this.aumentaTamanho();		
 		if(this.dimension < this.elements.length) {
 			this.elements[this.dimension] = element;
 			this.dimension++;
@@ -48,4 +46,44 @@ public class Vecteur {
 		return false;
 	}
 	
+	public String busca(int posicao) {
+		
+		if(!(posicao>=0 && posicao<dimension)){
+			throw new IllegalArgumentException("Posição Invalida");
+		}
+		
+		return this.elements[posicao];
+	}
+	
+	
+	public int busca(String elemento) {
+		for( int i=0; i<this.dimension; i++) {
+			if (this.elements[i].equals(elemento)) {
+				return i;
+			}
+		}
+		return -1;
+	}
+	
+	public boolean addElement(int posicao, String element) {
+		this.busca(posicao);
+		this.aumentaTamanho();
+		for (int i = this.dimension-1; i >= posicao; i--) {
+			this.elements[i+1] = this.elements[i];
+		}
+		this.elements[posicao] = element;
+		this.dimension++;
+		
+		return true;
+	}
+	
+	private void aumentaTamanho() {
+		if(this.dimension==this.elements.length) {
+			String[] novoElements = new String[this.elements.length * 2];
+			for (int i = 0; i < this.elements.length; i++) {
+				novoElements[i] = this.elements[i];
+			}
+			this.elements = novoElements;
+		}
+	}
 }
