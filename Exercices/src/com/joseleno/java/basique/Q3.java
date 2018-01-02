@@ -22,6 +22,8 @@ public class Q3 {
 				
 			}
 		}
+		
+		scan.close();
 	}
 
 }

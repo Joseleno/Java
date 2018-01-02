@@ -20,7 +20,12 @@ public class Q4 {
 		} else {
 			System.out.println("Consoante");
 		}
+		
+		s.close();
 
 	}
+	
+
+
 
 }

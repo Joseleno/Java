@@ -16,6 +16,8 @@ public class Q02 {
 		}else {
 			System.out.print("Positive");
 		}
+		
+		scan.close();
 
 	}
 
