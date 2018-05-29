@@ -1,6 +1,6 @@
 package com.santos.joseleno;
 
-public class FunctionelInterface {
+public class FunctionelInterface implements InterC{
 
 	interface Num {
 		double getValue();
@@ -13,7 +13,10 @@ public class FunctionelInterface {
 	interface NumeroValor{
 		boolean testeValor(int a, int b);
 	}
-
+	
+public FunctionelInterface() {
+	
+}
 	public static void main(String[] args) {
 		Num n;
 		n = () -> 1.5;
@@ -32,9 +35,19 @@ public class FunctionelInterface {
 		NumeroValor isDiv = (x,y) -> (x%y)==0;
 		System.out.println(isDiv.testeValor(12,2));
 		System.out.println(isDiv.testeValor(0,12));
+		FunctionelInterface f = new FunctionelInterface();
 		
-		
+		System.out.println(f.nome);
 		
 	}
+
+	@Override
+	public String nome(String a, String b) {
+		// TODO Auto-generated method stub
+		return this.nome;
+	}
+	
+
+	
 
 }

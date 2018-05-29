@@ -9,7 +9,7 @@ public class StreamExemple {
 		// avant Java 8
 		System.out.println("  avant Java 8");
 		List<String> list1 = Arrays.
-				asList("Brésil", "France", "Canada", "Chine", "Russie");
+				asList("BrÃ©sil", "France", "Canada", "Chine", "Russie");
 
 		for (String s : list1) {
 			System.out.println(s);
@@ -19,8 +19,8 @@ public class StreamExemple {
 		System.out.println(" Lambda");
 		list1.forEach(x -> System.out.println(x));
 
-		System.out.println("Références de Méthodes");
-		// Java 8 les références de méthodes
+		System.out.println("RÃ©fÃ©rences de MÃ©thodes");
+		// Java 8 les rÃ©fÃ©rences de mÃ©thodes
 		list1.forEach(System.out::println);
 	}
 }
