@@ -9,4 +9,4 @@ Implémentations Java
 
 4 - Lambdas
 
-5 - un exemple simple de JPA + HIBERNATE 
+5 - Design Patterns
