@@ -12,7 +12,7 @@ public class Array_B {
         boolean[] booleanExemple = new boolean[taille];
         //Objects
         String[] stringExemple = new String[taille];
-
+        
         for (int i = 0; i< taille; i++){
             System.out.println("Numeros: " + numberExemple[i]);
             System.out.println("Boolean: " + booleanExemple[i]);
